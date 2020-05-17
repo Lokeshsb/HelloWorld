@@ -4,7 +4,7 @@ pipeline {
 		stage("Compile Stage") {
 			steps {
 			
-				bat 'mvn clean package'
+				bat 'mvn clean compile -U -X'
 			
 			}
 		}
